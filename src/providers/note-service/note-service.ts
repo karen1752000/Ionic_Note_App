@@ -4,10 +4,20 @@ import { Storage } from '@ionic/storage';
 
 
 @Injectable()
-export class NoteServiceProvider {
+export class NoteService {
 
-  constructor(public http: HttpClient) {
-    console.log('Hello NoteServiceProvider Provider');
+
+  private notes: {title: string}[] = [];
+
+
+
+  constructor() {
+  }
+  saveNote(note: {title: string}) {
+      this.notes.push(note);
   }
 
+  getAllNotes() {
+    return [...this.notes];
+  }
 }
