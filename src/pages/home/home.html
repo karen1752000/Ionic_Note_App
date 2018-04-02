@@ -8,14 +8,15 @@
     <ion-searchbar></ion-searchbar>
   </ion-toolbar>
 </ion-header>
-
 <ion-content padding>
   <ion-list>  
     <button ion-item *ngFor="let note of notes | async" (click)="getNote(note.createDate)">
       <span class="note-date"> {{ note.date }}</span>
       {{ note.title }}
-      
     </button>
   </ion-list>
-  <button ion-button (click)="addNote()">Add Note</button>
+  <button ion-button round (click)="addNote()">Add Note</button>
 </ion-content>
+
+
+
