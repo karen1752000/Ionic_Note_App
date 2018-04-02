@@ -1,6 +1,6 @@
 {
   "name": "iNotes",
-  "app_id": "",
+  "app_id": "3e59e2fe",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

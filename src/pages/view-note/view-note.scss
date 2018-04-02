@@ -1,3 +1,25 @@
 page-view-note {
+    ion-content {
+        background: url(../assets/imgs/bg-1.jpeg) no-repeat center fixed;
+        background-size: cover;
+        &:before {
+            content: '';
+            position: absolute;
+            // font-family: 'Homemade Apple', cursive;
+            // src:url(https://fonts.googleapis.com/css?family=Homemade+Apple);
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-image: linear-gradient(to bottom right #0276FD, #003F87);
+            opacity: .6;
+        }
+    }
+    .note-date {
+        font-size: 0.8em;
+        color: #888;
+        margin-bottom: 12px;
+    }
 
 }
+
