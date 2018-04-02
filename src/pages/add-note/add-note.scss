@@ -1,6 +1,6 @@
 page-add-note {
     ion-content {
-        background: url(../assets/imgs/bg-3.jpeg) no-repeat center fixed;
+        background: url(../assets/imgs/mobile2.jpg) no-repeat center fixed;
         background-size: cover;
         &:before {
             content: '';
@@ -9,7 +9,7 @@ page-add-note {
             right: 0;
             left: 0;
             bottom: 0;
-            background-image: linear-gradient(to bottom right #0276FD, #003F87);
+            // background-image: linear-gradient(to bottom right #0276FD, #003F87);
             opacity: .6;
         }
     }
