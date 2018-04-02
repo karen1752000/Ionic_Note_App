@@ -9,6 +9,7 @@ import { Note } from '../../models/note.model';
   selector: 'page-view-note',
   templateUrl: 'view-note.html',
 })
+
 export class ViewNotePage {
   note: Note;
 
@@ -18,7 +19,6 @@ export class ViewNotePage {
       this.note = this.navParams.get('note');
   }
   deleteNote(createDate: number){
-    console.log('pressed')
     this.noteService.deleteNote(createDate);
     this.navCtrl.pop();
   }
