@@ -18,8 +18,8 @@ export class ViewNotePage {
     private noteService: NoteService) {
       this.note = this.navParams.get('note');
   }
-  deleteNote(createDate: number){
-    this.noteService.deleteNote(createDate);
-    this.navCtrl.pop();
-  }
+  // deleteNote(createDate: number){
+  //   this.noteService.deleteNote(createDate);
+  //   this.navCtrl.pop();
+  // }
 }
