@@ -42,7 +42,7 @@
     "plugins": {
       "cordova-sqlite-storage": {},
       "cordova-plugin-ionic": {
-        "APP_ID": "3e59e2fe",
+        "APP_ID": "0a27eca7",
         "CHANNEL_NAME": "Master",
         "UPDATE_METHOD": "background"
       }

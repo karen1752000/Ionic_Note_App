@@ -37,7 +37,7 @@ export class NoteService {
 
   deleteNote(createDate: number){
     this.notes = this.notes.filter((note) => {
-      return note.createDate !== createDate
+       return note.createDate !== createDate
     });
     this.storage.set('note', this.notes);
   }
