@@ -16,6 +16,14 @@
     </button>
   </ion-list>
   <button ion-button round (click)="addNote()">Add Note</button>
-</ion-content>
 
-
+    <ion-fab bottom right #fab>
+      <button ion-fab>Share</button>
+      <ion-fab-list side="top">
+        <button ion-fab (click)="share('facebook', fab)"><ion-icon name="logo-facebook"></ion-icon></button>
+        <button ion-fab (click)="share('twitter', fab)"><ion-icon name="logo-twitter"></ion-icon></button>
+        <button ion-fab (click)="share('instagram', fab)"><ion-icon name="logo-instagram"></ion-icon></button>
+        <button ion-fab (click)="share('tumblr', fab)"><ion-icon name="logo-tumblr"></ion-icon></button>
+      </ion-fab-list>
+    </ion-fab>
+   </ion-content>
