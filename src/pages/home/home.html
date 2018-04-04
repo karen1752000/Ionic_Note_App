@@ -9,14 +9,16 @@
   </ion-toolbar>
 </ion-header>
 <ion-content padding>
-  <ion-list>  
-    <button ion-item *ngFor="let note of notes | async" (click)="getNote(note.createDate)">
+  <ion-list> 
+      <button ion-item *ngFor="let note of notes | async" (click)="getNote(note.createDate)">
       <span class="note-date"> {{ note.date }}</span>
       {{ note.title }}
     </button>
   </ion-list>
   <button ion-button round (click)="addNote()">Add Note</button>
 
+
+  <!-- social media buttons -->
     <ion-fab bottom right #fab>
       <button ion-fab>Share</button>
       <ion-fab-list side="left">
