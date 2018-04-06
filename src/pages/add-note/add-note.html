@@ -27,7 +27,34 @@
         <div class="alert" *ngIf="!formGroup.controls['content'].valid 
         && formGroup.controls['content'].touched">{{ contentAlert }}</div>
       </ion-item>
-      
+      <ion-card>
+          <ion-card-header>
+            Category
+          </ion-card-header>
+        
+          <ion-list>
+            <button ion-item>
+              <ion-icon name="cart" item-start></ion-icon>
+              Shopping
+            </button>
+        
+            <button ion-item>
+              <ion-icon name="medical" item-start></ion-icon>
+              Hospital
+            </button>
+        
+            <button ion-item>
+              <ion-icon name="cafe" item-start></ion-icon>
+              Cafe
+            </button>
+        
+            <button ion-item>
+              <ion-icon name="beer" item-start></ion-icon>
+              Pub
+            </button>
+          </ion-list>
+        </ion-card>
+        
     <button ion-button round type="submit" [disabled]="!formGroup.valid">Save Note</button>
 
   </form>
